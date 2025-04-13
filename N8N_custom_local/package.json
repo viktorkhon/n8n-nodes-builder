@@ -1,0 +1,31 @@
+{
+  "name": "n8n_custom_local",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "nodes": [
+      "dist/DynamicOpenAIChatModel/DynamicOpenAIChatModel.node.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node-fetch": "^2.6.11"
+  },
+  "dependencies": {
+    "@langchain/openai": "^0.5.5",
+    "langchain": "^0.3.21",
+    "@langchain/core": "^0.1.48",
+    "n8n-core": "^1.14.1",
+    "n8n-workflow": "^1.86.0"
+  }
+}

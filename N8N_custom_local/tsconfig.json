@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "./custom_nodes",
+    "skipLibCheck": true,
+    "baseUrl": "." 
+  },
+  "include": [
+    "custom_nodes/**/*.ts" 
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.json"          // Exclude all .json files
+  ]
+}
